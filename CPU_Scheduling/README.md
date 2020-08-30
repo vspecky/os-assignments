@@ -8,7 +8,10 @@ For an assignment in my Operating Systems course. I would have preferred somethi
 my best despite not being a C++ programmer.
 
 ## Usage
-Compile and run the executable once. It will tell you the usage.
+The executable takes 2-3 arguments
+- The type of algorithm you want to run (`fcfs` | `sjf` | `rr`)
+- The path to the file containing the table of processes (an example is `test/table.txt`)
+- A Time Quantum (Only applicable and mandatory if you have selected RR)
 
 ## Tests/Output
 Tests can be found in the `tests` folder. The table present in `tests/table.txt` was used for all the tests. In the table, processes
