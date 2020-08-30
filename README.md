@@ -4,7 +4,7 @@ Implementation of the following OS scheduling algorithms :-
 - Shortest Job First (SJF)
 - Round Robin (RR)
 
-For an assignment in my OS course. I would have preferred something like Rust for my implementation but using C++ was mandatory so I have tried
+For an assignment in my Operating Systems course. I would have preferred something like Rust for my implementation but using C++ was mandatory so I have tried
 my best despite not being a C++ programmer.
 
 ## Usage
