@@ -1,0 +1,87 @@
+╰─▶ ./a.out lru 3
+Timestep: 1
+   Queue State: [ ] ( 0 Hits, 0 Misses )
+   Enter Next Page > 1
+   Page not found, Inserting
+   Inserted Page 1
+
+Timestep: 2
+   Queue State: [ 1, ] ( 0 Hits, 1 Misses )
+   Enter Next Page > 2
+   Page not found, Inserting
+   Inserted Page 2
+
+Timestep: 3
+   Queue State: [ 1, 2, ] ( 0 Hits, 2 Misses )
+   Enter Next Page > 3
+   Page not found, Inserting
+   Inserted Page 3
+
+Timestep: 4
+   Queue State: [ 1, 2, 3, ] ( 0 Hits, 3 Misses )
+   Enter Next Page > 1
+   Page 1 found, hit! (Total Hits = 2)
+
+Timestep: 5
+   Queue State: [ 1, 2, 3, ] ( 1 Hits, 3 Misses )
+   Enter Next Page > 1
+   Page 1 found, hit! (Total Hits = 3)
+
+Timestep: 6
+   Queue State: [ 1, 2, 3, ] ( 2 Hits, 3 Misses )
+   Enter Next Page > 2
+   Page 2 found, hit! (Total Hits = 2)
+
+Timestep: 7
+   Queue State: [ 1, 2, 3, ] ( 3 Hits, 3 Misses )
+   Enter Next Page > 2
+   Page 2 found, hit! (Total Hits = 3)
+
+Timestep: 8
+   Queue State: [ 1, 2, 3, ] ( 4 Hits, 3 Misses )
+   Enter Next Page > 4
+   Page not found, Inserting
+   Queue full, popping LRU Page
+   Erasing Page 3
+   Inserted Page 4
+
+Timestep: 9
+   Queue State: [ 1, 2, 4, ] ( 4 Hits, 4 Misses )
+   Enter Next Page > 8
+   Page not found, Inserting
+   Queue full, popping LRU Page
+   Erasing Page 4
+   Inserted Page 8
+
+Timestep: 10
+   Queue State: [ 1, 2, 8, ] ( 4 Hits, 5 Misses )
+   Enter Next Page > 8
+   Page 8 found, hit! (Total Hits = 2)
+
+Timestep: 11
+   Queue State: [ 1, 2, 8, ] ( 5 Hits, 5 Misses )
+   Enter Next Page > 8
+   Page 8 found, hit! (Total Hits = 3)
+
+Timestep: 12
+   Queue State: [ 1, 2, 8, ] ( 6 Hits, 5 Misses )
+   Enter Next Page > 8
+   Page 8 found, hit! (Total Hits = 4)
+
+Timestep: 13
+   Queue State: [ 1, 2, 8, ] ( 7 Hits, 5 Misses )
+   Enter Next Page > 8
+   Page 8 found, hit! (Total Hits = 5)
+
+Timestep: 14
+   Queue State: [ 1, 2, 8, ] ( 8 Hits, 5 Misses )
+   Enter Next Page > 4
+   Page not found, Inserting
+   Queue full, popping LRU Page
+   Erasing Page 1
+   Inserted Page 4
+
+Timestep: 15
+   Queue State: [ 2, 8, 4, ] ( 8 Hits, 6 Misses )
+   Enter Next Page > -1
+   Execution Ended
