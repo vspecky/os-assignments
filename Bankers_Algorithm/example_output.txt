@@ -1,0 +1,28 @@
+╰─▶ ./a.out example.processes 3 3 2
+Timestep 1:
+   Executing Process P1 
+   Need: 1 2 2 
+   Available: 3 3 2 
+
+Timestep 2:
+   Executing Process P3 
+   Need: 0 1 1 
+   Available: 5 3 2 
+
+Timestep 3:
+   Executing Process P4 
+   Need: 4 3 1 
+   Available: 7 4 3 
+
+Timestep 4:
+   Executing Process P0 
+   Need: 7 4 3 
+   Available: 7 4 5 
+
+Timestep 5:
+   Executing Process P2 
+   Need: 6 0 0 
+   Available: 7 5 5 
+
+The system is in a safe state
+Path: P1  -> P3  -> P4  -> P0  -> P2 
