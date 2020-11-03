@@ -1,7 +1,12 @@
+/** Implementation of Banker's Algorithm
+ * Name: Shashank *******
+ * PRN: 0120180337
+ * Roll No: 015
+ */
+
 #include <bits/stdc++.h>
 #include <vector>
 #include <string>
-#include <exception>
 #include <fstream>
 #include <sstream>
 
