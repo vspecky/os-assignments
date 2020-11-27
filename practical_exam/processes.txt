@@ -1,0 +1,5 @@
+Media Player,       0, 4
+Save File,          2, 6
+Partition Disk,     5, 3
+Download Antivirus, 8, 5
+Get File,           9, 4
